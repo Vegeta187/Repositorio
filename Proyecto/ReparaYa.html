@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Repara Ya</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #001b33, #00274d);
+      color: white;
+    }
+
+    .sidebar {
+      width: 250px;
+      background: linear-gradient(to bottom, #001b33, #00274d);
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      padding: 1.5rem 1rem;
+      box-shadow: 2px 0 10px rgba(255, 204, 0, 0.4);
+      border-right: 2px solid #ffcc00;
+    }
+
+    .sidebar h2 {
+      color: #ffcc00;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 1rem 0;
+      cursor: pointer;
+      transition: color 0.3s, transform 0.2s;
+    }
+
+    .sidebar ul li:hover {
+      color: #ffcc00;
+      transform: scale(1.05);
+    }
+
+    .main {
+      margin-left: 270px;
+      padding: 2rem;
+    }
+
+    .section {
+      background: linear-gradient(to bottom right, #002f5e, #003366);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+      border-left: 4px solid #ffcc00;
+      border-top: 2px solid #ffcc00;
+    }
+
+    .section h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      border-bottom: 3px solid #ffcc00;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      color: #ffcc00;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .galeria,
+    .equipo {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .galeria img,
+    .equipo img {
+      width: 180px;
+      height: auto;
+      border-radius: 10px;
+      border: 3px solid #ffcc00;
+      box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover,
+    .equipo img:hover {
+      transform: scale(1.05);
+    }
+
+    ul.objetivos {
+      padding-left: 1.2rem;
+      line-height: 1.6;
+    }
+
+    ul.objetivos li::marker {
+      color: #ffcc00;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background: linear-gradient(to right, #001b33, #00274d);
+      color: #ffcc00;
+      font-weight: bold;
+      border-top: 2px solid #ffcc00;
+      box-shadow: 0 -2px 10px rgba(255, 204, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú lateral -->
+  <div class="sidebar">
+    <h2>REPARA YA</h2>
+    <ul>
+      <li>1. Introducción</li>
+      <li>2. Diseño de la Aplicación</li>
+      <li>3. Equipo de Desarrollo</li>
+      <li>4. Objetivos</li>
+      <li>5. Conclusión</li>
+    </ul>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="main">
+
+    <!-- 1. Introducción -->
+    <div class="section">
+      <h3>1. Introducción</h3>
+      <p>
+        Muchas personas enfrentan dificultades al momento de encontrar servicios confiables y cercanos para reparar sus dispositivos electrónicos y electrodomésticos. La falta de información y la desconfianza en la calidad de los servicios disponibles generan confusión y frustración.
+      </p>
+      <p>
+        Frente a esta problemática, surge <strong>Repara Ya</strong>, una aplicación diseñada para mejorar la comunicación entre locales de reparación y clientes, facilitando el acceso a soluciones seguras, rápidas y eficientes. Además de beneficiar a los usuarios, la plataforma busca impulsar el trabajo de técnicos independientes, conectándolos con más oportunidades laborales.
+      </p>
+    </div>
+
+    <!-- 2. Diseño de la Aplicación -->
+    <div class="section">
+      <h3>2. Diseño de la Aplicación</h3>
+      <div class="galeria">
+        <img src="IMG/Inicio de Sesion.png" alt="Pantalla 1">
+        <img src="IMG/Mapa.png" alt="Pantalla 2">
+        <img src="IMG/Detalle Local.png" alt="Pantalla 3">
+        <img src="IMG/Busqueda.png" alt="Pantalla 4">
+        <img src="IMG/Menu.png" alt="Pantalla 5">
+      </div>
+    </div>
+
+    <!-- 3. Equipo de Desarrollo -->
+    <div class="section">
+      <h3>3. Integrantes del Equipo</h3>
+      <div class="equipo">
+        <div>
+          <img src="IMG/Jonathan.png" alt="Integrante 1">
+          <p style="text-align:center;">Jonathan Gómez<br><small>Líder de Proyecto</small></p>
+        </div>
+        <div>
+          <img src="IMG/Felipe.png" alt="Integrante 2">
+          <p style="text-align:center;">Felipe Muñoz<br><small>Diseñador de UI</small></p>
+        </div>
+        <div>
+          <img src="IMG/Cristian.png" alt="Integrante 3">
+          <p style="text-align:center;">Cristian Jiménez<br><small>Programador</small></p>
+        </div>
+        <div>
+          <img src="IMG/Alejandro.png" alt="Integrante 4">
+          <p style="text-align:center;">Alejandro Rojas<br><small>Base de Datos</small></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Objetivos -->
+    <div class="section">
+      <h3>4. Objetivos</h3>
+      <ul class="objetivos">
+        <li>Identificar y resolver problemas reales en la app usando programación y herramientas como UML, prototipos y mockups.</li>
+        <li>Aprender a crear y gestionar una base de datos con MySQL y Workbench para organizar bien la información de la app.</li>
+        <li>Usar lo aprendido para resolver problemas paso a paso con lógica, creando y probando funciones en Python.</li>
+        <li>Crear una función en la app que asigne al técnico más cercano al cliente usando ubicaciones y un algoritmo de distancia.</li>
+        <li>Aprender a estructurar y documentar un proyecto tecnológico, desde el problema hasta su desarrollo.</li>
+      </ul>
+    </div>
+
+    <!-- 5. Conclusión -->
+    <div class="section">
+      <h3>5. Conclusión</h3>
+      <p>
+        Repara Ya no solo busca resolver un problema cotidiano, sino también ofrecer una solución tecnológica completa, funcional y accesible para todos. Con un diseño amigable, integración con bases de datos y un enfoque social que beneficia tanto a usuarios como a técnicos, esta aplicación demuestra el potencial de la programación para transformar necesidades reales en soluciones eficientes. Es una muestra clara de cómo la tecnología, bien aplicada, puede mejorar la vida cotidiana.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2025 Repara Ya – Proyecto Académico
+  </div>
+
+</body>
+</html>
